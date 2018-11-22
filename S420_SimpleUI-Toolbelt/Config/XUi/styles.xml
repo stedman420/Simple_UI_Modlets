@@ -1,0 +1,20 @@
+<configs>
+	<append xpath="/styles">
+		<!-- Increased toolbelt slot size and new holding color - holding color below will change toolbelt holding color. Use a color from this styles.xml below or use an rgb color code. -->
+		<style name="S420itemStack">
+			<style_entry name="select_color" value="[beige]"/>
+			<style_entry name="press_color" value="[limeGreen]"/>
+			<style_entry name="final_pressed_color" value="[lightGrey]"/>
+			<style_entry name="background_color" value="[mediumGrey]"/>
+			<style_entry name="highlight_color" value="[hoverColor]"/>
+			<style_entry name="holding_color" value="[green]"/>
+			<style_entry name="width" value="82"/>
+			<style_entry name="height" value="82"/>
+			<style_entry name="hover_icon_grow" value="1.5"/>
+			<style_entry name="on_press" value="true"/>
+			<style_entry name="sound_volume" value="0.75"/>
+			<style_entry name="pickup_sound" value="[pickup_click]"/>
+			<style_entry name="place_sound" value="[place_click]"/>
+		</style>
+	</append>
+</configs>

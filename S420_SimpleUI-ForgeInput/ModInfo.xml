@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="S420_SimpleUI-ForgeInput" />
+		<Description value="Adds an extra slot to the forge input" />
+		<Author value="stedman420" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

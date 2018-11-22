@@ -1,0 +1,14 @@
+<configs>
+	<!-- Crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='crafting']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Campfire crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_campfire']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Forge crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Cement mixer crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_cementMixer']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Workbench crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_workbench']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+	<!-- Chemistry station crafting slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_chemistryStation']/window[@name='windowCraftingQueue']/@name">S420windowCraftingQueue</set>
+</configs>

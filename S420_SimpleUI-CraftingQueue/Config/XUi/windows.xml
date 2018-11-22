@@ -1,0 +1,12 @@
+<configs>
+	<append xpath="/windows">
+		<!-- Extra Crafting Queue Slot -->
+		<window name="S420windowCraftingQueue" width="397" height="78" panel="Left" cursor_area="true" >
+			<rect depth="0" pos="19,0" width="378" controller="CraftingQueue">
+				<grid name="queue" rows="1" cols="5" pos="3,-13" cell_width="75" cell_height="75" repeat_content="true">
+					<recipe_stack name="0"/>
+				</grid>
+			</rect>
+		</window>
+	</append>
+</configs>

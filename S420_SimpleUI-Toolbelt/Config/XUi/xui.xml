@@ -1,0 +1,8 @@
+<configs>
+	<!-- Toolbelt -->
+	<remove xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']/window[@name='windowToolbelt']"/>
+	<append xpath="/xui/ruleset[@name='default']/window_group[@name='toolbelt']">
+		<window name="S420XpBar" anchor="CenterBottom" />
+		<window name="S420windowToolbelt" anchor="CenterBottom" />
+	</append>
+</configs>

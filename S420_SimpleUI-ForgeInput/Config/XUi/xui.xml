@@ -1,0 +1,4 @@
+<configs>
+	<!-- Forge input slots -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">S420windowForgeInput</set>
+</configs>

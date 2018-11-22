@@ -1,0 +1,29 @@
+<configs>
+	<append xpath="/controls">
+		<!-- Increased toolbelt slot size and new background -->
+		<S420_item_stack>
+			<rect controller="ItemStack" style="S420itemStack, hover" collider_scale="1.1">
+				<sprite depth="2" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="88" height="88" color="[black]" type="sliced" fillcenter="false" />	
+				<sprite depth="3" name="background" sprite="menu_empty3px" width="83" height="83" color="[darkGrey]" type="sliced" globalopacity="true" fillcenter="false"/>
+				<sprite depth="2" name="highlightOverlay" width="82" height="82" color="[darkGrey]" pos="0,0" type="sliced" globalopacity="true"/>
+
+				<texture depth="3" name="backgroundTexture" material="Materials/Transparent Colored" size="83,83" globalopacity="true"/>
+				<!--sprite depth="3" name="backgroundTexture" size="83,83" color="[black_half_alpha]" type="sliced" /-->
+				
+				<sprite depth="4" name="itemIcon" width="76" height="56" atlas="ItemIconAtlas" sprite="{itemicon}" pos="42,-35" pivot="center" foregroundlayer="true" color="{iconcolor}" />
+				<sprite depth="8" name="lockTypeIcon" width="24" height="24" sprite="" pos="2,-2" foregroundlayer="true"/>
+				
+				<sprite depth="3" name="durabilityBackground" width="75" height="10" sprite="menu_empty3px" color="[darkGrey]" type="sliced" pos="4, -70" foregroundlayer="true"/>
+				<sprite depth="4" name="durability" width="75" height="10" sprite="menu_empty2px" color="[transparent]" type="filled" pos="4, -70" foregroundlayer="true"/>
+				
+				<sprite depth="5" name="disabledOverlay" width="82" height="82" color="[darkGrey_half_alpha]" pos="1,-1" type="sliced" visible="false"/>
+				
+				<label depth="7" name="stackValue" pos="5,-54" width="70" height="28" text="{itemcount}" font_size="26" effect="outline" justify="center" />
+				<label depth="7" name="timer" pos="35,-38" width="70" height="24" font_size="24" justify="center" pivot="center" effect="outline" color="[beige]"/>
+				<sprite depth="9" name="cancel" sprite="ui_game_symbol_x" width="70" height="70" color="255,0,0,255" type="sliced" visible="false" foregroundlayer="true"/>
+				<label depth="12" name="itemName" pos="36,-35" width="0" height="0" text="" font_size="26" justify="center" overflow="resizefreely" effect="outline" pivot="center" above_soft_cursor="true"/>
+				<sprite depth="13" name="assembleIcon" size="40,40" sprite="{stacklockicon}" visible="{isassemblelocked}" pos="14,-14" foregroundlayer="true" />
+			</rect>
+		</S420_item_stack>
+	</append>
+</configs>

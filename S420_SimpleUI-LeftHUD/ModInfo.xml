@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="S420_SimpleUI-LeftHUD" />
+		<Description value="Adds more info to the hud" />
+		<Author value="stedman420" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

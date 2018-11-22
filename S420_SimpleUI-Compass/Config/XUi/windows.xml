@@ -1,0 +1,29 @@
+<configs>
+	<append xpath="/windows">
+		<!-- Compass, Date, Time, Temp, and Elevation -->
+		<window name="S420windowCompass" style="compass.window" controller="CompassWindow">
+			<sprite style="compass.window.background.border"/>
+			<sprite style="compass.window.background"/>
+
+			<sprite style="compass.window.compass.background"/>
+
+			<texture style="compass.window.compass.texture" name="compassTexture" rect_size="0.25,1" rect_offset=".8,0" >
+
+			</texture>
+			
+			<sprite depth="5" name="Icon" sprite="ui_game_symbol_map_player_arrow" size="16,16" pos="248,-7" rotation="180" color="[black]" foregroundlayer="true"/>
+			<sprite depth="6" name="Icon" sprite="ui_game_symbol_map_player_arrow" size="12,12" pos="246,-5" rotation="180" color="[white]" foregroundlayer="true"/>
+
+			<sprite depth="5" name="Icon" sprite="ui_game_symbol_map_player_arrow" size="16,16" pos="232,-37" color="[black]" foregroundlayer="true"/>
+			<sprite depth="6" name="Icon" sprite="ui_game_symbol_map_player_arrow" size="12,12" pos="234,-39" color="[white]" foregroundlayer="true"/>
+
+			<label depth="2" name="TextContent" pos="153,-66" font_size="28" color="[white]" justify="center" pivot="center" text="{daytitle}: {day|always}  {timetitle}: {time|always}" height="30" effect="outline" upper_case="true" />
+
+			<sprite depth="2" name="Icon" sprite="ui_game_symbol_temperature" size="22,22" pos="251,-55" color="[white]" />
+			<label depth="2" name="TextContent" pos="299,-66" font_size="28" color="[white]" justify="center" pivot="center" text="{maptemperature}[-]" height="30" controller="MapStats" effect="outline"/>
+
+			<sprite depth="2" name="Icon" sprite="ui_game_symbol_climb" size="22,22" pos="331,-55" color="[white]" />
+			<label depth="2" name="TextContent" pos="387,-66" font_size="28" color="[white]" globalopacitymod="1.8" justify="center" pivot="center" text="{mapelevation}[-] M" height="30" controller="MapStats" effect="outline" />
+		</window>
+	</append>
+</configs>

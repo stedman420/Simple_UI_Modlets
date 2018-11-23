@@ -1,0 +1,5 @@
+<configs>
+<!-- Player inventory size -->
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='18']/@value">33</set>
+	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>
+</configs>

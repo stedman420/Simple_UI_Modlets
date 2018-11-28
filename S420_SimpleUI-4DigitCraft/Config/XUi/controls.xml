@@ -1,0 +1,4 @@
+<configs>
+	<set xpath="/controls/count_control_input/panel/@width">40</set>
+	<set xpath="/controls/count_control_input/panel/@character_limit">4</set>
+</configs>

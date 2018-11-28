@@ -1,0 +1,6 @@
+<configs>
+	<!-- empty, storage containers the player crafts-->
+	<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">13,11</set>
+    <!-- Player dropped backpack-->
+	<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">11,13</set>
+</configs>

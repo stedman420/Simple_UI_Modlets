@@ -1,0 +1,4 @@
+<configs>
+	<!-- Looting window -->
+	<set xpath="/xui/ruleset[@name='default']/window_group[@name='looting']/window[@name='windowLooting']/@name">S420windowLooting</set>
+</configs>

@@ -1,0 +1,7 @@
+<configs>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/grid[@name='itemActions']/rect[@name='actions']/rect[@name='recipeCraftCountControl']/button[@name='countUp']/@pos">70,-20</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/grid[@name='itemActions']/rect[@name='actions']/rect[@name='recipeCraftCountControl']/button[@name='countMax']/@pos">102,-20</set>
+
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect/rect[@name='counterControl']/button[@name='countUp']/@pos">70,-20</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect/rect[@name='counterControl']/button[@name='countMax']/@pos">102,-20</set>
+</configs>

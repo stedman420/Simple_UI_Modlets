@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/windows">
+		<!-- Expanded player built storage -->
+		<window name="S420windowLooting" width="378" height="378" controller="LootWindow" panel="Left" anchor_side="bottomright" visible="false" cursor_area="true" >
+			<panel name="header" height="43" depth="0" disableautobackground="true">
+				<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header"/>
+				<button depth="3" name="btnSort" style="icon32px, press, hover" pivot="center" pos="21,-21" sprite="ui_game_symbol_loot_sack" tooltip_key="lblSortContainer" sound="[paging_click]" />
+				<label depth="2" name="lootName" pos="39,-6" width="172" height="32" text="LOOT" text_key="xuiLoot" font_size="32" />
+
+				<label depth="2" name="takeAllLabel" width="32" height="30" font_size="30" color="[mediumGrey]" justify="left" pos="260,-8"/>
+
+				<sprite depth="2" name="takeAllIcon" style="icon32px" sprite="ui_game_symbol_hand" color="[mediumGrey]" pos="220, -4"/>
+			</panel>
+			<sprite depth="0" name="gridBackground" color="255,255,255,1" type="sliced" pos="0, 0" globalopacity="true" on_press="true" />
+			<rect name="content" pos="3,-49" >
+				<grid depth="12" name="queue" rows="10" cols="14" cell_width="75" cell_height="75" repeat_content="true" controller="LootContainer">
+					<item_stack name="0"/>
+				</grid>
+			</rect>
+		</window>
+	</append>
+</configs>

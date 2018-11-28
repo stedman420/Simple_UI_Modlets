@@ -1,0 +1,4 @@
+<configs>
+	<!-- empty, storage containers the player crafts-->
+	<set xpath="/lootcontainers/lootcontainer[@id='1']/@size">14,10</set>
+</configs>

@@ -59,7 +59,7 @@
 					<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
 					<sprite depth="3" pos="3,-3"  color="0,128,0,150" type="filled" height="37" width="79" fill="{playerfoodfill}" />
 					<sprite depth="4" name="Icon" sprite="ui_game_symbol_hunger" size="32,32" pos="4,-6" foregroundlayer="true"/>
-					<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerfood}%" height="30" />
+					<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerfood}" height="30" />
 				</rect>
 
 				<rect width="84" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
@@ -67,7 +67,7 @@
 					<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
 					<filledsprite depth="3" name="BarContent" pos="3,-3" color="64,164,223,150" height="37" width="79" type="filled" fill="2" />
 					<sprite depth="4" name="Icon" sprite="ui_game_symbol_water" size="32,32" pos="4,-6" foregroundlayer="true"/>
-					<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerwater}%" height="30" />
+					<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerwater}" height="30" />
 				</rect>
 			</grid>
 

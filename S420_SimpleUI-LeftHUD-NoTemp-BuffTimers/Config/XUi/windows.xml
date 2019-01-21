@@ -62,23 +62,63 @@
 							</rect>
 						</panel>
 					</rect>
-					<grid name="hud" pos="0,-94" rows="1" cols="2" width="171" cell_width="85" cell_height="46" repeat_content="false" side="left" >
-						<rect width="84" height="43" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
-							<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-							<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
-							<sprite depth="3" pos="3,-3"  color="0,128,0,150" type="filled" height="37" width="79" fill="{playerfoodfill}" controller="PlayerStatsWindow" />
-							<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="4,-6" foregroundlayer="true"/>
-							<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playermodifiedcurrentfood}" height="30" />
-						</rect>
+					<rect depth="2" name="searchControls" width="327" height="43" pos="185,-124">
+						<button depth="4" name="characterButton" style="icon22px, press" pos="0,0" color="[white]" sprite="ui_game_symbol_ping" pivot="center" tooltip="Default - Current Amount Only without overfill" sound="[paging_click]" selected="true"  visible="{showcore}"/>
+						
+						<button depth="4" name="statButton" style="icon22px, press" pos="0,0" color="[white]" sprite="ui_game_symbol_ping" pivot="center" tooltip="Detailed - Current And Max Amounts including overfill" sound="[paging_click]" visible="{showcharacter}" />
+						
+						<button depth="4" name="coreStatButton" style="icon22px, press" pos="0,0" color="[white]" sprite="ui_game_symbol_ping" pivot="center" tooltip="Water Bar Only" sound="[paging_click]" visible="{showstats}"/>	
+					</rect>
+					
+					<rect name="rect_Default" visible="{showcharacter}">
+						<grid name="hud" pos="0,-94" rows="1" cols="2" width="171" cell_width="85" cell_height="46" repeat_content="false" side="left" >
+							<rect width="84" height="43" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+								<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
+								<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
+								<sprite depth="3" pos="3,-3"  color="0,128,0,150" type="filled" height="37" width="79" fill="{playerfoodfill}" controller="PlayerStatsWindow" />
+								<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="4,-6" foregroundlayer="true"/>
+								<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerfood}" height="30" controller="PlayerStatsWindow"/>
+							</rect>
 
-						<rect width="84" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
-							<sprite depth="1" name="border" color="0,0,0,100" height="43" width="84" type="sliced" />
-							<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
-							<filledsprite depth="3" name="BarContent" pos="3,-3" color="64,164,223,150" height="37" width="79" type="filled" fill="2" />
-							<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="4,-6" foregroundlayer="true"/>
-							<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playermodifiedcurrentwater}" height="30" />
+							<rect width="84" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+								<sprite depth="1" name="border" color="0,0,0,100" height="43" width="84" type="sliced" />
+								<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
+								<filledsprite depth="3" name="BarContent" pos="3,-3" color="64,164,223,150" height="37" width="79" type="filled" fill="2" />
+								<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="4,-6" foregroundlayer="true"/>
+								<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerwater}" height="30" controller="PlayerStatsWindow"/>
+							</rect>
+						</grid>
+					</rect>
+
+					<rect name="rect_Detailed" visible="{showstats}">
+						<grid name="hud" pos="0,-94" rows="1" cols="2" width="171" cell_width="85" cell_height="46" repeat_content="false" side="left" >
+							<rect width="84" height="43" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+								<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
+								<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
+								<sprite depth="3" pos="3,-3"  color="0,128,0,150" type="filled" height="37" width="79" fill="{playerfoodfill}" controller="PlayerStatsWindow" />
+								<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="30,30" pos="4,-6" foregroundlayer="true"/>
+								<label depth="6" name="TextContent" pos="15,-8" font_size="20" color="[white]" justify="center" pivot="topleft" text="{playermodifiedcurrentfood}/{playerfoodmax}" height="30" />
+							</rect>
+
+							<rect width="84" height="43" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+								<sprite depth="1" name="border" color="0,0,0,100" height="43" width="84" type="sliced" />
+								<sprite depth="2" pos="3,-3"  name="background" height="37" width="81" color="64,64,64,100" type="sliced" />
+								<filledsprite depth="3" name="BarContent" pos="3,-3" color="64,164,223,150" height="37" width="79" type="filled" fill="2" />
+								<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="30,30" pos="4,-6" foregroundlayer="true"/>
+								<label depth="6" name="TextContent" pos="15,-8" font_size="20" color="[white]" justify="center" pivot="topleft" text="{playermodifiedcurrentwater}/{playerwatermax}" height="30" />
+							</rect>
+						</grid>
+					</rect>
+
+					<rect name="rect_Water" visible="{showcore}">
+						<rect width="171" height="43" pos="0,-94" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+							<sprite depth="1" name="border" color="0,0,0,128" type="sliced" />
+							<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+							<filledsprite depth="3" name="BarContent" color="64,164,223,150" width="169" type="filled" fill="2" />
+							<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
+							<label depth="7" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playermodifiedcurrentwater}/{playerwatermax}" height="30"/>
 						</rect>
-					</grid>
+					</rect>
 				</rect>
 			</rect>
 

@@ -1,10 +1,59 @@
 <configs>
 	<!-- Player backpack window -->
-	<set xpath="/windows/window[@name='windowBackpack']/@width">673</set>
+	<set xpath="/windows/window[@name='windowBackpack']/@width">674</set>
 	<set xpath="/windows/window[@name='windowBackpack']/@height">416</set>
 	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">370</set>
-	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">673</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">674</set>
 	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">403</set>
 	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
 	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/label[@text='{currencyamount}']/@pos">540,-8</set>
+	<set xpath="/windows/window[@name='windowBackpack']/panel[@name='header']/sprite[@name='costIcon']/@pos">645,-10</set>
+	
+	<!-- Player inspect window -->
+	<set xpath="/windows/window[@name='emptyInfoPanel']/@width">674</set>
+	<set xpath="/windows/window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/sprite[@name='backgroundMain']/@width">674</set>
+	
+	<!-- Player info window -->
+	<set xpath="/windows/window[@name='itemInfoPanel']/@width">674</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/panel[@name='header']/label[@text='{pricelabel} {itemcost}{markup}']/@pos">414,-8</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/panel[@name='header']/sprite[@name='costIcon']/@pos">645,-10</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/@height">347</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/sprite[@width='603']/@width">671</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cols">7</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@pos">155,-271</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cell_width">73</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showonlydescription}']/@width">515</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showonlydescription}']/sprite[@name='backgroundMain']/@width">521</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showonlydescription}']/label[@name='descriptionText']/@width">454</set>
+
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@pos='152,0']/@width">516</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/sprite[@name='backgroundMain']/@width">521</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/@width">521</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showdescription}']/label[@name='descriptionText']/@width">508</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,0']/label[@text='{itemstattitle1}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-33']/label[@text='{itemstattitle2}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-64']/label[@text='{itemstattitle3}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-94']/label[@text='{itemstattitle4}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-127']/label[@text='{itemstattitle5}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-159']/label[@text='{itemstattitle6}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-192']/label[@text='{itemstattitle7}']/@width">498</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,0']/label[@text='{itemstat1}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-33']/label[@text='{itemstat2}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-64']/label[@text='{itemstat3}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-94']/label[@text='{itemstat4}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-127']/label[@text='{itemstat5}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-159']/label[@text='{itemstat6}']/@width">498</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showstatanddescription}']/rect[@visible='{showstats}']/rect[@pos='-3,-192']/label[@text='{itemstat7}']/@width">498</set>
+	
+	<!-- Trader Window Info -->
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{showtraderoptions}']/@width">215</set>
 </configs>
